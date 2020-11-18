@@ -1,0 +1,152 @@
+@nav_res : 1030px;
+.menu-area{
+  position: absolute;
+  .transition(background 0.8s ease 0s);
+  bottom: 0;
+  padding: 10px 0;
+  background: @white;
+  background: fade(@white, 30%);
+  left: 0;
+  border-bottom: 1px solid @white - 20;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+
+  .toogle-bars{
+    display: none;
+    a{
+      text-decoration: none;
+      color: @black;
+      .ic-open{
+        display: none;
+        visibility: hidden;
+      }
+      .ic-close{
+        display: inline;
+        visibility: visible;
+      }
+      &.collapsed{
+        .ic-open{
+          display: inline;
+          visibility: visible;
+        }
+        .ic-close{
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  .main-nav{
+    visibility: visible !important;
+    margin: 0;
+    background: transparent;
+    &>li{
+      display: inline;
+      &>a{
+        font-weight: 700;
+        color: @black + 50;
+        outline: none;
+        font-size: 12px;
+        .transition;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+          color: @black;
+          outline: none;
+        }
+      }
+
+      &+li:before {
+        color: @black + 50;
+      }
+
+      &.active{
+        &>a{
+          color: @black;
+        }
+      }
+    }
+
+    &.nav{
+      &>li{
+        &>a{
+          padding: 0;
+          display: inline-block;
+          &:hover, &:focus{
+            background: transparent;
+          }
+        }
+      }
+    }
+
+    &.no-space{
+      &>li{
+        &+li:before {
+          content: "";
+        }
+      } 
+    }
+  }
+
+  .nav-white(){
+    border-bottom: 1px solid @white - 20;
+    background: @white;
+    .main-nav{
+      &>li{
+        &>a{
+          color: @colorText;
+          &:hover{
+            color: @black;
+          }
+        }
+        &.active{
+          &>a{
+            color: @black;
+          }
+        }
+
+        &+li:before {
+          color: @white - 20;
+        }
+      }
+    }
+  }
+  &.nav-white-bg{
+    .nav-white;
+  }
+
+
+  &.nav-fixed{
+    position: fixed;
+    top: 0;
+    background: @white;
+    z-index: 100;
+    bottom: inherit;
+    border-bottom: 1px solid @white - 20;
+  }
+
+  @media (min-width: @nav_res) {
+    .menu-collapse.collapse{
+      display: block;
+      height: auto !important;
+    }
+  }
+
+  @media (max-width: @nav_res) {
+    .nav-white;
+    .toogle-bars{
+      display: block;
+    }
+    .menu-collapse{
+
+      &.collapse.in{
+        border-top: 1px solid @white - 20; 
+        margin-top: 10px;
+        display: block;
+      }
+    }
+  }
+
+}

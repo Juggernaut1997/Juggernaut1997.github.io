@@ -1,0 +1,53 @@
+.flat-carousel{
+
+  .carousel-inner{
+    //.radius(10px);
+  }
+  .carousel-control{
+    .text_shadow;
+    color: @white;
+    background: none;
+    .ic-right, .ic-left{
+      position: absolute;
+      width: 40px;
+      line-height: 40px;
+      text-align: center;
+      display: block;
+      height: 40px;
+      top: 50%;
+      .radius(4px);
+      margin-top: -20px;
+      background: @black;
+    }
+    .ic-right{
+      right: 50%;
+      margin-right: -20px;
+    }
+    .ic-left{
+      left: 50%;
+      margin-left: -20px;
+    }
+  }
+  
+  .carousel-caption{
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: fade(@black, 10%);
+    .radius(0 0 6px 6px );
+  }
+
+  .carousel-indicators{
+    bottom: 0;
+    background: @black + 50;
+    margin-bottom: 0;
+    .radius(5px 5px 0 0);
+    width: 150px;
+    margin-left: -75px;
+    li.active{
+      width: 20px;
+    }
+  }
+}

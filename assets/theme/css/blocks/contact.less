@@ -1,0 +1,69 @@
+.contact-area{
+  position: relative;
+  .form-contact-area{
+    width: 50%;
+    position: relative;
+
+    .inner-contact{
+      clear: both;
+      width: 470px;
+      padding: 60px 40px 60px 0;
+      float: right;
+    }
+    @media (max-width: @res_tab) {
+      width: 100% !important; 
+      .inner-contact{
+        width: 100%;
+        padding: 60px 15px 60px 15px;
+        float: none;
+      }
+    }
+  }
+  .map-area{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid @white - 20;
+    background: @white - 10;
+    @media (max-width: @res_tab) {
+      position:relative;
+      height: 300px;
+      width: 100%;
+    }
+
+    &:before{
+      content: "";
+      .transition;
+      background: fade(@white, 70%);
+      z-index: 99;
+      right:0;
+      top: 0;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    &.show{
+      &:before{
+        right: -100%;
+      }
+    }
+  }
+}
+
+
+.map-content {
+  line-height: 1;
+  padding: 20px 0 20px 20px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  i{
+    margin-right: 2px;
+  }
+}

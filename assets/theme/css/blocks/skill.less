@@ -1,0 +1,84 @@
+
+.skill{
+  margin:0;
+  .box{
+    text-align: center;
+    border: 1px solid transparent;
+    padding-bottom: 30px;
+  }
+  &.top{
+    .box{
+      padding-top: 50px;
+    }
+  }
+
+  &.bottom{
+    .box{
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }  
+  }
+
+  @media (max-width: @res_mini_mobile) {
+    .box{
+      padding-bottom: 30px !important;
+      padding-top: 30px !important;
+      border: 0 !important;
+    }
+  }
+}
+
+.chart{
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .percent {
+    color: @black;
+    display: inline-block;
+    line-height: 110px;
+    z-index: 2;
+    &:after {
+      content: '%';
+      margin-left: 0.1em;
+      font-size: .8em;
+    }
+  }
+}
+
+.title-border{
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid @white - 20;
+  border-bottom: 1px solid @white - 20;
+}
+
+.list-progress{
+  li{
+    padding: 20px 0;
+    .title{
+      margin-bottom: 10px;
+    }
+    .progress-line{
+      background: @white - 5;
+      border: 1px solid @white - 20;
+      padding: 5px;
+      .line{
+        height: 3px;
+        background: black;
+        display: block;
+        width: 0;
+      }
+    }
+  }
+
+}
+

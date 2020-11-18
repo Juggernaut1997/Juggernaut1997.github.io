@@ -1,0 +1,35 @@
+
+.services{
+  margin:0;
+  li{
+    text-align: center;
+    .box{
+      padding: 80px 0;
+      border-right: @white - 20 solid 1px; 
+
+    }
+    .ic{
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    &:last-child{
+      .box{
+        border-right: 0;
+      }
+    }
+
+    @media (max-width: @res_mini_mobile) {
+      .box{
+        border-right: 0; 
+        border-bottom: @white - 20 solid 1px; 
+        padding: 40px 0;  
+      }
+      &:last-child{
+        .box{
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}

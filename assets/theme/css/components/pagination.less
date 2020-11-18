@@ -1,0 +1,23 @@
+//Flat Pagination ============================================================
+.flat-pagination{
+  &>li{
+    &>a, &>span{
+      color: @colorText;
+      .transition;
+      .radius;
+      margin-left: 5px;
+      .box_shadow(0 0 3px fade(@black, 3%));
+      border-color: @white - 20;
+    }
+    &>a:hover{
+      .box_shadow(0 0 0 fade(@black, 10%));
+      color: @colorText;
+    }
+  }
+  
+  &>.active>a, &>.active>span, &>.active>a:hover, &>.active>span:hover, &>.active>a:focus, &>.active>span:focus{
+    background-color: @black + 50;
+    border-color:@black + 50;
+  }
+}
+//End Flat Pagination ============================================================

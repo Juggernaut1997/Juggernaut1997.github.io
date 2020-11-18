@@ -1,0 +1,206 @@
+.btn-default{
+  border-color: @white - 20;
+}
+
+.btn-solid(){
+  .radius;
+  font-family: 'Open Sans';
+   .transition(all 0.8s ease 0s);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  min-width: 151px;
+  letter-spacing: 1px;
+  padding: 13px;
+
+
+  &.btn-lg{
+    padding: 16px;
+    font-size: 14px;
+    min-width: 140px;
+  }
+
+  &.btn-sm{
+    padding: 10px;
+    min-width: 100px;
+    font-size: 11px;
+  }
+
+  &.btn-xs{
+    padding: 8px;
+    min-width: 80px;
+    font-size: 10px;
+  }
+
+  &.btn-default{
+    color: @black;
+    background-color: @white - 5;
+    &:hover{
+      background-color: @white - 20;
+    }
+  }
+
+  &.btn-link{
+    color: @black;
+  }
+
+  &.btn-pill{
+    .radius(25px);
+  }
+
+  &.primary-btn{
+    color: @white;
+    background-color: @black + 50;
+    &:hover, &:focus{
+      color: @white;
+      background-color: @black ;
+    }
+  }
+
+  &:hover, &:focus{
+    .box_shadow;
+
+    outline: none;
+  }
+
+  &.btn-icon{
+    min-width: 35px; 
+  }
+
+
+}
+
+.btn-line(){
+  font-family: 'Open Sans';
+  .radius(0);
+  .transition(all 0.8s ease 0s);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  min-width: 151px;
+  border-width: 3px;
+  letter-spacing: 1px;
+  padding: 13px;
+  background-color: transparent;
+  color: @black;
+  &.light-font{
+    color: @white;
+  }
+
+  &.btn-lg{
+    padding: 16px;
+    font-size: 14px;
+    min-width: 140px;
+  }
+
+  &.btn-sm{
+    padding: 10px;
+    min-width: 100px;
+    font-size: 11px;
+  }
+
+  &.btn-xs{
+    padding: 8px;
+    min-width: 80px;
+    font-size: 10px;
+  }
+
+
+
+  &.btn-default{
+    color: @black;
+    border-color: @white - 20;
+    
+    
+    &:hover, &:focus{
+      background: @black;
+      border-color: @black;
+      color: @white;
+    }
+    &.light-font{
+      border-color: @white;
+      color: @white;
+      &:hover, &:focus{
+        background-color: @white;
+        color: @black;
+      }
+    }
+  }
+
+
+  &.btn-link{
+    color: @black;
+    &.light-font{
+      color: @white;
+    }
+  }
+
+  &.btn-pill{
+    .radius(25px);
+  }
+
+  &.primary-btn{
+    color: @white;
+    border-color: @white;
+    background-color: transparent;
+    &.clicked, &:hover, &:focus{
+      color: @black;
+      border-color: transparent;
+      background-color: @white;
+    }
+  }
+
+  &.btn-icon{
+    min-width: 35px; 
+  }
+
+  &:hover, &:focus{
+    .box_shadow;
+    outline: none;
+  }
+}
+
+
+// Buttons Content ============================================================
+.btn-flat-solid{
+  .btn-solid;
+}
+
+.btn-flat-line{
+  .btn-line;
+}
+
+.link-text{
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: @black;
+}
+
+
+.box-btn-more{
+  position: relative;
+  padding: 20px 0;
+  text-align:center;
+  .btn{
+    position: relative;
+    background: @white;
+    text-decoration: none;
+    border-left: 1px solid @white - 20;
+    border-right: 1px solid @white - 20;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border: 1px solid @white - 20;
+    }
+  }
+  &:before{
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-top: 1px solid @white - 20;
+    left: 0;
+
+  }
+}

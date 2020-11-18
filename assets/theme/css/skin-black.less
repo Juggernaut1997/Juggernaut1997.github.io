@@ -1,0 +1,635 @@
+@import url('includes/css3.less');
+@import url('includes/variable.less');
+
+/*
+This file for reset skin to black.
+01. BODY 
+02. HELPER
+03. COMPONENTS
+  - NAVBAR
+  - BUTTONS
+  - FORM
+  - PAGINATION
+  - TABS
+04. MAIN-HEADER 
+05. CONTENT 
+  - ABOUT
+  - SERVICES
+  - RESUME
+  - SKILLS 
+  - PORTFOLIO
+  - BLOG
+  - CONTACT
+  - TESTIMONIAL
+06. MAIN-FOOTER 
+*/
+
+
+/*============================
+     01. BODY
+============================*/
+body{
+  background-color: @black + 50;
+  color: @colorText + 20;
+}
+
+/*============================
+     02. HELPER
+============================*/
+.pace .pace-progress {
+  background: @white;
+  color: @black;
+}
+
+.block-section{
+  background-color: @black + 50;
+  .color-dark{
+    color: @white;
+  } 
+}
+
+.bg-secondary{
+  background-color: @black + 40;
+
+  .color-dark{
+    color: @white;
+  } 
+}
+
+.bg-dark{
+  background-color: @black + 10;
+}
+
+
+.block-title{
+  border-top: 1px solid @black + 30;
+  border-bottom: 1px solid @black + 30;
+  .title-icon{
+    display: inline-block;
+    position: relative;
+    &:before{
+      background: @white - 50;
+    }
+    &:after{
+      background: @white - 50;
+    }
+  }
+  &:before{
+    background: @black + 40;
+  }
+}
+
+
+
+.shape-bottom{
+  &:before{
+    background: @black + 40;
+    border: 1px solid @black + 30;
+  }
+}
+
+
+.br-right{
+  border-right: 1px solid @black + 30 !important;
+}
+
+.br-left{
+  border-left: 1px solid @black + 30 !important;
+}
+
+.br-top{
+  border-top: 1px solid @black + 30 !important;
+}
+
+.br-bottom{
+  border-bottom: 1px solid @black + 30 !important;
+}
+
+.title-border{
+  border-top: 1px solid  @black + 30 ;
+  border-bottom: 1px solid  @black + 30 ;
+}
+
+hr {
+  border-top: 1px solid @black + 30;
+}
+
+.line-dash-bottom{
+  border-bottom: 1px dashed @black + 30;
+  padding-bottom: 12px;
+}
+
+/*============================
+     03. COMPONENTS
+============================*/
+
+
+
+/*============================
+     NAVBAR
+============================*/
+@nav_res : 1030px;
+.menu-area{
+  background: @black;
+  background: fade(@black, 30%);
+  border-bottom: 1px solid @black + 30;
+
+  .toogle-bars{
+    a{
+      color: @white;
+    }
+  }
+
+  .main-nav{
+    &>li{
+      &>a{
+        color: @white - 50;
+        &:hover{
+          color: @white;
+          outline: none;
+        }
+      }
+
+      &+li:before {
+        color: @black + 50;
+      }
+
+      &.active{
+        &>a{
+          color: @white;
+        }
+      }
+    }
+
+    &.nav{
+      &>li{
+        &>a{
+        }
+      }
+    }
+
+    &.no-space{
+      &>li{
+      } 
+    }
+  }
+
+  .nav-white(){
+    border-bottom: 1px solid @black + 30;
+    background: @black + 50;
+    .main-nav{
+      &>li{
+        &>a{
+          color: @colorText;
+          &:hover{
+            color: @white;
+          }
+        }
+        &.active{
+          &>a{
+            color: @white;
+          }
+        }
+
+        &+li:before {
+          color: @black + 30;
+        }
+      }
+    }
+  }
+
+  &.nav-white-bg{
+    .nav-white;
+  }
+
+
+  &.nav-fixed{
+    background: @black + 50;
+    z-index: 100;
+    bottom: inherit;
+    border-bottom: 1px solid @black + 30;
+  }
+
+  @media (min-width: @nav_res) {
+    .menu-collapse.collapse{
+    }
+  }
+
+  @media (max-width: @nav_res) {
+    .nav-white;
+    .toogle-bars{
+    }
+    .menu-collapse{
+
+      &.collapse.in{
+        border-top: 1px solid @black + 30; 
+      }
+    }
+  }
+}
+
+
+/*============================
+     BTNS
+============================*/
+
+.box-btn-more{
+  .btn{
+    color: @white;
+    background:@black + 50;
+    border-left: 1px solid @black + 30;
+    border-right: 1px solid @black  + 30;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border: 1px solid @black + 30;
+    }
+  }
+  &:before{
+    border-top: 1px solid @black + 30;
+  }
+}
+
+.btn-flat-solid.primary-btn{
+  background-color: @black + 30;
+}
+
+
+
+/*============================
+     FORMS
+============================*/
+
+.form-control{
+  &.form-flat{
+    background: @black + 50;
+    color: @white;
+    border-color: @black + 40;
+    &:focus{
+      border-color: @black  + 20;
+    }
+    &.error{
+      border-color: @black  + 10;
+    }
+  }
+}
+
+
+/*============================
+     PAGINATION
+============================*/
+.flat-pagination{
+  &>li{
+    &>a, &>span, &>span:hover{
+      background-color: @black + 30;
+      color: @colorText;
+      .box_shadow(0 0 3px fade(@white, 3%));
+      border-color: @black + 20;
+    }
+    &>a:hover{
+      .box_shadow(0 0 0 fade(@white, 10%));
+      color: @colorText;
+    }
+  }
+
+  &>.active>a, &>.active>span, &>.active>a:hover, &>.active>span:hover, &>.active>a:focus, &>.active>span:focus{
+    background-color: @black;
+    border-color:@black + 20;
+  }
+}
+
+
+/*============================
+     TABS
+============================*/
+.flat-nav-tabs{
+  background: @black + 40;
+  border-top: 1px solid @black + 30;
+  border-left: 1px solid @black + 30;
+  border-right: 1px solid @black + 30;
+  border-bottom: 1px solid transparent;
+  &>li{
+    &>a, &>a:hover, &>a:focus{
+      border-color:@black + 40 !important;
+      background: @black + 40 !important;
+      border-bottom:0 !important;
+      position:relative;
+      top: 1px;
+      color: @white !important;
+    }
+    &.active{
+      &>a{
+        position:relative;
+        top: 1px;
+        border-color:@black + 40 !important;
+        border-bottom:0;
+        .box_shadow(0 -2px 0  @black); 
+        background: @black + 50  !important;;
+      }
+    }
+  }
+}
+
+
+
+
+/*============================
+     04. MAIN-HEADER 
+============================*/
+.main-header{
+  .header-content-fixed{
+    &:before{
+      background: fade(@black, 60%);
+    }
+    &:after{
+      background: fade(@black, 63%);
+    }
+
+  }
+
+  &:hover{
+    .header-content-fixed{
+      &:before{
+        //top: -100%;
+        background: fade(@black, 78%);
+      }
+      &:after{
+        //    bottom: -100%;
+        background: fade(@black, 80%);
+      }
+    }
+  }
+
+  .job{
+    border-bottom: 1px solid @white;
+  }
+
+  .color-dark{
+    color: @white;
+  }
+
+  .box-line {
+    color: @white;
+    background: transparent;
+    border-color: @white;
+  } 
+}
+
+
+
+
+/*============================
+     05. CONTENT 
+============================*/
+
+/*============================
+      ABOUT
+============================*/
+.my-profile{
+  .my-pict{
+    .overfly{
+      background: fade(@black, 60%);
+    }
+  }
+}
+
+/*============================
+      SERVICES
+============================*/
+.services{
+  li{
+    .box{
+      border-right-color: @black + 30; 
+    }
+
+    @media (max-width: @res_mini_mobile) {
+      .box{
+        border-bottom-color: @black + 30; 
+      }
+      &:last-child{
+        .box{
+        }
+      }
+    }
+  }
+}
+
+
+/*============================
+     RESUME
+============================*/
+.list-employment, .list-education{
+  li{
+    .ic{
+      background: @black + 30;
+      color: @white;
+    }
+    .number{
+      color: @black + 40;
+    }
+    .desc{
+      border-top: 1px solid @black + 30;
+      border-bottom: 1px solid @black + 30;
+    }
+    &:nth-child(odd){
+      .ic{
+      }
+      .number{
+      }
+
+      .desc{
+      }
+    }
+
+  }
+  &:before{
+    background: @black + 30;
+  }
+
+  @media (max-width: @res_mini_mobile) {
+    li{
+      background: @black + 50;
+      width: 100%;
+      .desc{
+        border-top: 1px solid @black + 30;
+        border-bottom: 0;
+      }
+      &:last-child{
+        .desc{
+          border-bottom: 1px solid @black + 30;;
+        }
+      }
+    }
+    .number{
+    } 
+  }
+}
+
+/*============================
+     SKILLS
+============================*/
+.list-progress{
+  li{
+    .title{
+    }
+    .progress-line{
+      background: @black + 30;
+      border: 1px solid @black + 30;
+      padding: 5px;
+      .line{
+        background: @white;
+      }
+    }
+  }
+
+}
+
+
+
+/*============================
+     PORTFOLIO
+============================*/
+.box-work{
+  background: @black + 30;
+  border: 1px solid @black + 30;
+
+  .work-preview{
+    .hover{
+      a.project-title{
+        background: fade(@white, 70%);
+        color: @black;
+      }
+    }
+  }
+}
+
+
+
+
+/*============================
+     BLOG
+============================*/
+.list-blog{
+  li{
+    .box-blog{
+      background: @black + 40;
+      border:  1px solid @black + 30;
+      .blog-bg{
+        .blog-ic{
+          background: @black + 30;
+        }
+        &:before{
+          background: fade(@black, 10%);
+        }
+      }
+    }
+  }
+}
+
+
+
+.post-meta{
+  border-bottom: 1px solid @black + 30;
+  span{
+    i{
+      color: @black;
+    }
+  }
+}
+
+
+.list-tags{
+  li{
+    a{
+      background: @black + 30;
+      color: @colorText;
+      border: 1px solid @black + 20;
+    }
+  }
+}
+
+
+
+.comments{
+  li{
+    h5{
+      color: @white - 30;
+    }
+    .post-comment-block{
+      border-bottom: 1px solid @black + 30;
+    }
+  }
+}
+
+.blog-content{
+  blockquote{
+    color: @white - 40;
+  }
+}
+
+
+/*============================
+     CONTACT
+============================*/
+.contact-area{
+  .map-area{
+    border-left: 1px solid @black + 30;
+    background: @black + 30;
+    &:before{
+      background: fade(@black, 70%);
+    }
+  }
+}
+
+
+/*============================
+     TESTIMONIAL
+============================*/
+
+.box-testimonial{
+  border: 1px solid @black + 30;
+  background: @black + 50;
+  max-width: 530px;
+  .img-profile{
+    border: 1px solid @black + 30;
+    background: @black + 50;
+  }
+}
+
+.carousel-testi{
+  .carousel-indicators{
+    li{
+      border-color: @black;
+      .box_shadow(0 0 0 3px fade(@black, 30%));
+      background: fade(@black, 30%);
+      &.active, &:hover{
+        background: @black;
+      }
+    }
+  }
+}
+
+
+
+/*============================
+     06. MAIN-FOOTER
+============================*/
+.main-footer{
+  background: @black + 30;
+  border-top: 1px solid @black;
+  border-bottom: 5px solid @black;
+  .folow-me{
+    background: @black + 20;
+  }
+  .back-to-top{
+    color: @colorText;
+    background: @black + 20;
+    &:hover, &:focus{
+      color: @white;
+    }
+  }
+  &:before{
+    background: fade(@black, 10%)
+  }
+}
+

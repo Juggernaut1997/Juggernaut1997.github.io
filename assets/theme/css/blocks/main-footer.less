@@ -1,0 +1,79 @@
+
+.main-footer{
+  padding-bottom: 40px;
+  font-size: 12px;
+  background: @black + 50;
+  position: relative;
+  border-top: 1px solid @black + 80;
+  border-bottom: 5px solid @black + 80;
+
+  .folow-me{
+    text-align: center;
+    background: @black + 80;
+    padding: 5px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 150px;
+  }
+  .back-to-top{
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+    text-decoration: none;
+    outline: none;
+    line-height: 30px;
+    text-align: center;
+    color: @colorText;
+    background: @black + 80;
+    &:hover, &:focus{
+      color: @white;
+    }
+  }
+
+  p{
+    position: relative;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: fade(@black, 5%)
+  }
+}
+
+
+
+
+.social-links{
+  padding: 0;
+  margin-bottom: 10px;
+
+  a{
+    position: relative;
+    color: @white;
+    display: block;
+    .transition(background 0.8s ease 0s);
+    width: 30px;
+    text-decoration: none;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    background: @black + 40;
+    i{
+      position: relative;
+    }
+    &:hover{
+      background: @white;
+      color: @black;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+
+.box-testimonial{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 1px solid @white - 20;
+  position: relative;
+  padding: 30px;
+  padding-left: 50px;
+  background: @white;
+  max-width: 530px;
+  &.left{
+    margin-left: 30px;
+  }
+  h4, h5{
+    letter-spacing: 3px;
+  }
+  .img-profile{
+    width: 60px;
+    margin: 30px 0;
+    position: absolute;
+    padding: 5px;
+    border: 1px solid @white - 20;
+    background: @white;
+    top: 0;
+    left:-30px;
+  }
+  .img-logo-client{
+    height: 30px;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 30px;
+  }
+}
+
+.carousel-testi{
+  margin: 0 auto;
+  max-width: 600px;
+  .carousel-indicators{
+    bottom: -25px;
+    li{
+      .radius;
+      .transition;
+      width: 10px;
+      margin: 0 5px;
+      height: 10px;
+      .box_shadow(0 0 0 3px fade(@white, 30%));
+      background: fade(@white, 30%);
+      &.active, &:hover{
+        background: @white;
+      }
+    }
+  }
+}

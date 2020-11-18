@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>Who I am - PERSONAL RESUME AND PORTFOLIO  - Help V 1.2</title>
+  <!-- Framework CSS -->
+  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="assets/css_js/shi_default.min.css" type="text/css" media="screen">
+  <style type="text/css" media="screen">
+    p, table, hr, .box { margin-bottom:25px; }
+    .box p { margin-bottom:10px; }
+    .mycode{
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <h3 class="center alt">Who I am - Personal Resume and Portfolio - Documentation by &ldquo;yobi11&rdquo; v1.2</h3>
+
+    <hr>
+
+    <h1 class="center">Who I am - Personal Resume and Portfolio</h1>
+    <div class="borderTop">
+      <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top">
+          <strong>
+            Created: 08/Des/2014<br>
+            By: Yobi Bina Setiawan<br>
+            Email: <a href="mailto:yobi.studio@gmail.com">yobi.studio@gmail.com</a><br/>
+            Skype: yobi.setiawan
+          </strong>
+        </p>
+      </div><!-- end div .span-6 -->		
+
+      <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/yobithemes">here</a>. Thanks so much!</p>
+      </div>
+    </div><!-- end div .borderTop -->
+
+    <hr>
+
+    <h2 id="toc" class="alt">Table of Contents</h2>
+    <ol class="alpha">
+      <li><a href="#htmlStructure">HTML Structure</a></li>
+      <li><a href="#cssFiles">CSS Files and Structure</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#php">PHP</a></li>
+      <li><a href="#credits">Sources and Credits</a></li>
+      <li><a href="#changelog">Change Log</a></li>
+    </ol>
+
+    <hr>
+
+    <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+    <p>This theme is a responsive layout and using <a href="http://getbootstrap.com/">Bootstrap v3.3.1</a> as css frameworks.</p>
+    <p>Here is the general structure of HTML page.</p>
+    <div class="mycode">
+      <div class="snippet-container"><div class="sh_default snippet-wrap"><div class="snippet-menu sh_sourceCode"><a class="snippet-window sh_url" href="#">pop-up</a><a class="snippet-text sh_url" href="#">text</a></div><pre class="shi_pre sh_html snippet-formatted sh_sourceCode"><ol class="snippet-num"><li><span class="sh_preproc">&lt;!DOCTYPE</span> <span class="sh_type">html</span><span class="sh_preproc">&gt;</span></li><li><span class="sh_keyword">&lt;html</span> <span class="sh_type">lang</span><span class="sh_symbol">=</span><span class="sh_string">"en"</span> <span class="sh_keyword">&gt;</span></li><li>  <span class="sh_keyword">&lt;head&gt;</span></li><li>    ....</li><li>    <span class="sh_comment">&lt;!-- CSS LOAD --&gt;</span></li><li>  <span class="sh_keyword">&lt;/head&gt;</span></li><li></li><li></li><li>  <span class="sh_keyword">&lt;body</span>  <span class="sh_type">data-spy</span><span class="sh_symbol">=</span><span class="sh_string">"scroll"</span> <span class="sh_type">data-target</span><span class="sh_symbol">=</span><span class="sh_string">".menu-area"</span> <span class="sh_type">data-offset</span><span class="sh_symbol">=</span><span class="sh_string">"200"</span><span class="sh_keyword">&gt;</span></li><li>    <span class="sh_comment">&lt;!--wrapper page--&gt;</span></li><li>    <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"wrapper"</span><span class="sh_keyword">&gt;</span></li><li></li><li>      <span class="sh_comment">&lt;!-- Main Header --&gt;</span></li><li>      <span class="sh_keyword">&lt;header</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"main-header"</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"home"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>        <span class="sh_keyword">&lt;div</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"menu-area"</span><span class="sh_keyword">&gt;</span></li><li>          <span class="sh_comment">&lt;!-- Nabvar ---&gt;</span></li><li>        <span class="sh_keyword">&lt;/div&gt;</span></li><li>      <span class="sh_keyword">&lt;/header&gt;</span><span class="sh_comment">&lt;!-- End Main Header --&gt;</span></li><li></li><li>      <span class="sh_comment">&lt;!-- ABOUT ME --&gt;</span></li><li>      <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"about"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"block-section"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/section&gt;</span><span class="sh_comment">&lt;!-- END ABOUT ME --&gt;</span></li><li></li><li></li><li>      <span class="sh_comment">&lt;!-- RESUME --&gt;</span></li><li>      <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"resume"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"block-section"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/section&gt;</span><span class="sh_comment">&lt;!-- END SERVICES--&gt;</span></li><li></li><li></li><li>      <span class="sh_comment">&lt;!--PORTFOLIO--&gt;</span></li><li>      <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"portfolio"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"block-section"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/section&gt;</span><span class="sh_comment">&lt;!--END PORTFOLIO--&gt;</span></li><li></li><li>      <span class="sh_comment">&lt;!--BLOG--&gt;</span></li><li>      <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"blog"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"block-section"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/section&gt;</span> <span class="sh_comment">&lt;!--END BLOG--&gt;</span></li><li></li><li>      <span class="sh_comment">&lt;!--CONTACT--&gt;</span></li><li>      <span class="sh_keyword">&lt;section</span> <span class="sh_type">id</span><span class="sh_symbol">=</span><span class="sh_string">"contact"</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"block-section"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/section&gt;</span><span class="sh_comment">&lt;!--END CONTACT--&gt;</span></li><li></li><li></li><li>      <span class="sh_comment">&lt;!--FOOTER--&gt;</span></li><li>      <span class="sh_keyword">&lt;footer</span> <span class="sh_type">class</span><span class="sh_symbol">=</span><span class="sh_string">"main-footer"</span><span class="sh_keyword">&gt;</span></li><li>        ....</li><li>      <span class="sh_keyword">&lt;/footer&gt;</span><span class="sh_comment">&lt;!--END FOOTER--&gt;</span></li><li>    <span class="sh_keyword">&lt;/div&gt;</span><span class="sh_comment">&lt;!--End wrapper page--&gt;</span></li><li></li><li></li><li>    <span class="sh_comment">&lt;!-- JS LOAD --&gt;</span></li><li>  <span class="sh_keyword">&lt;/body&gt;</span></li><li><span class="sh_keyword">&lt;/html&gt;</span></li></ol></pre><pre class="snippet-textonly sh_sourceCode" style="display:none;" tabindex="0" contenteditable="">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" &gt;
+  &lt;head&gt;
+    ....
+    &lt;!-- CSS LOAD --&gt;
+  &lt;/head&gt;
+
+
+  &lt;body  data-spy="scroll" data-target=".menu-area" data-offset="200"&gt;
+    &lt;!--wrapper page--&gt;
+    &lt;div class="wrapper"&gt;
+
+      &lt;!-- Main Header --&gt;
+      &lt;header class="main-header" id="home"&gt;
+        ....
+        &lt;div class="menu-area"&gt;
+          &lt;!-- Nabvar ---&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;&lt;!-- End Main Header --&gt;
+
+      &lt;!-- ABOUT ME --&gt;
+      &lt;section id="about" class="block-section"&gt;
+        ....
+      &lt;/section&gt;&lt;!-- END ABOUT ME --&gt;
+
+
+      &lt;!-- RESUME --&gt;
+      &lt;section id="resume" class="block-section"&gt;
+        ....
+      &lt;/section&gt;&lt;!-- END SERVICES--&gt;
+
+
+      &lt;!--PORTFOLIO--&gt;
+      &lt;section id="portfolio" class="block-section"&gt;
+        ....
+      &lt;/section&gt;&lt;!--END PORTFOLIO--&gt;
+
+      &lt;!--BLOG--&gt;
+      &lt;section id="blog" class="block-section"&gt;
+        ....
+      &lt;/section&gt; &lt;!--END BLOG--&gt;
+
+      &lt;!--CONTACT--&gt;
+      &lt;section id="contact" class="block-section"&gt;
+        ....
+      &lt;/section&gt;&lt;!--END CONTACT--&gt;
+
+
+      &lt;!--FOOTER--&gt;
+      &lt;footer class="main-footer"&gt;
+        ....
+      &lt;/footer&gt;&lt;!--END FOOTER--&gt;
+    &lt;/div&gt;&lt;!--End wrapper page--&gt;
+
+
+    &lt;!-- JS LOAD --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre></div></div>
+    </div>
+
+
+    <h3 id="cssFiles"><strong>B) CSS Files</strong> - <a href="#toc">top</a></h3>
+
+    <p>This theme imports seven CSS files.</p>
+
+
+
+    <ol>
+      <li>pace.css (page loader)</li>
+      <li>bootstrap.min.css (framework)</li>
+      <li>font-awesome.min.css (font icons)</li>
+      <li>typed.css (typed animation)</li>
+      <li>magnific-popup.css (light box)</li>
+      <li>jquery.simpleCaptcha.css (Captcha) <strong>New</strong> </li>
+      <li>styles.css (theme)</li>
+      <li>skin-black.css (optional theme skin black version ) <strong>New</strong> </li>
+    </ol>
+
+    <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+    <hr>
+
+
+
+    <h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+    <p>This theme imports twelve Javascript files.</p>
+
+
+
+    <ol>      
+      <li>jQuery.js</li>
+      <li>bootstrap.js</li>
+      <li>jquery.ui.map.js</li>
+      <li>jquery.easing-1.3.pack.js</li>
+      <li>jquery.parallax-1.1.3.js</li>
+      <li>jquery.magnific-popup.js</li>
+      <li>typed.js</li>
+      <li>jquery.easypiechart.min.js</li>
+      <li>jquery.simpleCaptcha.js <strong>New</strong></li>
+      <li>SimpleAjaxUploader.min.js <strong>New</strong></li>
+      <li>jquery.validate.min.js <strong>New</strong></li>
+      <li>theme.js</li>
+    </ol>
+
+    <ol>
+      <li><strong>jQuery</strong> is a Javascript library that greatly reduces the amount of code that you must write</li>
+      <li><strong>bootstrap</strong> contain all plugins of features bootstrap in a single file.</li>
+      <li><strong>jquery.ui.map</strong> is a JQuery plugin to create google maps with advanced features </li>
+      <li><strong>jquery.easing</strong> is a script that give advanced easing options</li>
+      <li><strong>jquery.parallax</strong> is a script that simulates the parallax effect </li>
+      <li><strong>magnific-popup</strong> is Light and open source responsive lightbox plugin with focus on performance, for jQuery</li>
+      <li><strong>typed</strong> is jQuery Animated Typing</li>
+      <li><strong>jquery.easypiechart</strong>  is a jQuery plugin that uses the canvas element to render simple pie charts for single values. </li>
+      <li><strong>jquery.simpleCaptcha.js </strong> is a Jquery for simple CAPTCHA </li>
+      <li><strong>SimpleAjaxUploader.min.js </strong> is a Javascript plugin for cross-browser Ajax file uploading with progress bar support. </li>
+      <li><strong>jquery.validate.min.js</strong>  Jquery for Form validation </li>
+      <li><strong>theme.js</strong> is all configuration code in this template or theme</li>
+    </ol>
+
+    <hr>
+    <h3 id="php"><strong>D) PHP</strong> - <a href="#toc">top</a></h3>
+
+    <p>This theme used php files for sending an email, and upload a file (attachment file).</p>
+    <ol>
+      <li><strong>sending_mail.php</strong> for sending an email <br/> 
+        <p>you need to add your email, please open this file and edit on line 11 variable <strong>$mailto = 'your@email.com';</strong></p>
+      </li>
+      <li><strong>upload,php</strong> for upload a file.</li>
+    </ol>
+
+
+
+    <hr>
+    <h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+    <p>I've used the following images, icons or other files as listed.
+
+    <ul>
+      <li>Css framework by <a href="http://getbootstrap.com"> Bootstrap</a></li>
+      <li>Icons by <a href="http://fortawesome.github.io/Font-Awesome/"> font-awesome</a></li>
+      <li>Images from <a href="http://unsplash.com/">unsplash.com</a> ,<a href="http://deathtothestockphoto.com/">deathtothestockphoto.com</a>  <a href="http://picjumbo.com/">picjumbo.com</a> , <a href="http://pixabay.com/">pixabay.com</a>, <a href="https://www.flickr.com/photos/yuri_samoilov/9975661323">Flickr yuri_samoilov</a></li>
+      <li>Jquery <a href="http://jquery.com">jquery.com</a></li>
+      <li>jquery-ui-map <a href="https://code.google.com/p/jquery-ui-map/">click here</a></li>
+      <li>magnific-popup <a href="http://dimsemenov.com/plugins/magnific-popup/">click here</a></li>
+      <li>jquery.easing <a href="http://gsgd.co.uk/sandbox/jquery/easing/">click here</a></li>
+      <li>jquery.parallax <a href="https://github.com/IanLunn/jQuery-Parallax">click here</a></li>
+      <li>typed <a href="http://www.mattboldt.com/demos/typed-js/">click here</a></li>
+      <li>jquery.easypiechart <a href="http://rendro.github.io/easy-pie-chart/">click here</a></li>
+      <li>jquery.simpleCaptcha.js <a href="https://github.com/jakerella/jquerySimpleCaptcha">click here</a> <strong>New</strong></li>
+      <li>SimpleAjaxUploader.min.js <a href="https://github.com/LPology/Simple-Ajax-Uploader">click here</a> <strong>New</strong></li>
+      <li>jquery.validate.min.js <a href="https://github.com/jzaefferer/jquery-validation">click here</a> <strong>New</strong></li>
+    </ul>
+
+    <hr>
+
+    <h3 id="changelog"><strong>F) Change Log</strong> - <a href="#toc">top</a></h3>
+    <h4>V1.2</h4>
+    <p>Working Ajax Contact Form and fixed minpr style on tablet </p>
+    
+    <h4>V1.1</h4>
+    <p>Add Black Skin</p>
+
+    <h4>V1.0</h4>
+    <p>Initial Released</p>
+    <hr/>
+
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+    <p><strong>Please dont forget to rate this item</strong> <img src="assets/images/star.png" alt=""> <img src="assets/images/star.png" alt=""> <img src="assets/images/star.png" alt=""> <img src="assets/images/star.png" alt=""> <img src="assets/images/star.png" alt=""> Cheers n_n </p>
+    <p class="append-bottom alt large"><strong>Best Regrads <br/>Yobi Bina Setiawan  </strong></p>
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+    <hr class="space">
+  </div><!-- end div .container -->
+  <script src="assets/css_js/shi_jquery.min.js "/>
+</body>
+</html>

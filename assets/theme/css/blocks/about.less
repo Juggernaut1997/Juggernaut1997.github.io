@@ -1,0 +1,67 @@
+
+.my-profile{
+  position:relative;
+  .my-pict{
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/my-pict.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    @media (max-width: @res_mobile) {
+      position: relative;
+      height: 300px;
+
+    }
+
+    .overfly{
+      background: fade(@white, 70%);
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      .transition(all 0.8s ease 0s);
+      overflow: hidden;
+      height: 100%;
+
+
+      .text-botttom{
+        position: absolute;
+        width: 100%;
+        .transition(all 0.8s ease 0s);
+        bottom: 0;
+        right: 0;
+        padding: 40px;
+        text-align: right;
+
+      }
+      &:hover{
+        /*        background: transparent;
+                .text-botttom{
+                  bottom: -100%;
+                }*/
+      }
+    }
+  }
+
+  .my-desc, .my-pict{
+    width: 50%;
+    @media (max-width: @res_mobile) {
+      width: 100% !important; 
+    }
+  }
+
+  .my-desc{
+    float: right;
+
+    .inner-text{
+      max-width: 585px;
+      padding: 40px;
+      @media (max-width: @res_mobile) {
+        max-width: 100%;
+      }
+    }
+  }
+}
