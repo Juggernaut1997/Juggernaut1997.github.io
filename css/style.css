@@ -11,7 +11,7 @@ body {
 }
 body .wrapper {
   z-index: 2;
-  visibility: hidden;
+  visibility: visible;
   opacity: 1.0;
   position: relative;
 }
