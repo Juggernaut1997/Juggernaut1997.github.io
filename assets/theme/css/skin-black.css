@@ -83,7 +83,7 @@ hr {
   outline: none;
 }
 .menu-area .main-nav > li + li:before {
-  color: #323232;
+  color: #f5f5f5;
 }
 .menu-area .main-nav > li.active > a {
   color: #ffffff;
@@ -102,7 +102,7 @@ hr {
   color: #ffffff;
 }
 .menu-area.nav-white-bg .main-nav > li + li:before {
-  color: #1e1e1e;
+  color: #f5f5f5;
 }
 .menu-area.nav-fixed {
   background: #323232;
