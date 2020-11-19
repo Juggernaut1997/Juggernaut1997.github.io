@@ -269,7 +269,7 @@ hr {
 }
 .list-employment li .number,
 .list-education li .number {
-  color: #282828;
+  color: #999;
 }
 .list-employment li .desc,
 .list-education li .desc {
