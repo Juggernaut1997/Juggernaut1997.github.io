@@ -83,7 +83,7 @@ hr {
   outline: none;
 }
 .menu-area .main-nav > li + li:before {
-  color: #f5f5f5;
+  color: #060707;
 }
 .menu-area .main-nav > li.active > a {
   color: #ffffff;
